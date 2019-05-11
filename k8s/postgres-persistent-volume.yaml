@@ -4,11 +4,8 @@ metadata:
   name: postgres-persistent-volume
   labels:
     type: local
-spec:
-  storageClassName: manual
+spec:  
   capacity:
     storage: 6Gi
   accessModes:
     - ReadWriteOnce
-  hostPath:
-    path: /home/developer
