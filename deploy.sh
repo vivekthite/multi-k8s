@@ -1,5 +1,3 @@
-echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-
 docker build -t vivekthite/multi-client:latest -t vivekthite/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t vivekthite/multi-server:latest -t vivekthite/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t vivekthite/multi-worker:latest -t vivekthite/multi-worker:$SHA -f ./worker/Dockerfile ./worker
