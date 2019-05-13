@@ -2,9 +2,9 @@ docker build -t vivekthite/multi-client:latest  -f ./client/Dockerfile ./client
 docker build -t vivekthite/multi-server:latest  -f ./server/Dockerfile ./server
 docker build -t vivekthite/multi-worker:latest  -f ./worker/Dockerfile ./worker
 
-docker build -t vivekthite/multi-client:$SHA -f ./client/Dockerfile ./client/
-docker build -t vivekthite/multi-server:$SHA -f ./server/Dockerfile ./server/
-docker build -t vivekthite/multi-worker:$SHA -f ./worker/Dockerfile ./worker/
+docker build -t vivekthite/multi-client:$SHA -f ./client/Dockerfile ./client
+docker build -t vivekthite/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t vivekthite/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push vivekthite/multi-client:latest
 docker push vivekthite/multi-server:latest
